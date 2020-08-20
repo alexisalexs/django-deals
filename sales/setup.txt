@@ -1,0 +1,18 @@
+1. To run project so far.
+    django:
+        -python3 manage.py runserver
+    react:
+        - npm build
+        - npm run dev
+
+2. RESTFUL workflow
+    dailysteals app
+        1.seralizers.py gather the model and fiels
+        2. rest_views.py create the custom ORM Call
+        3. in frontend>views.py create the view to render the page
+
+3. REACT WORKFLOW
+    1. Create component file in directory and then export it?
+    2. ...idk
+
+

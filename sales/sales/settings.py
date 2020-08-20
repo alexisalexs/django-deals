@@ -33,15 +33,16 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #My Apps
     'dailysteals',
+    'frontend',
 
     #All Auth required apps
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-
+    #Django Rest Framework
+    'rest_framework',
     #Django required Apps
     'django.contrib.sites',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,9 +135,9 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'storefront/static/')
+    os.path.join(BASE_DIR, 'frontend/frontend/static/'),
 ]
 
 """
